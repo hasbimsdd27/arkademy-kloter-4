@@ -1,0 +1,213 @@
+<%- include('template/header'); -%>
+<%- include('template/navbar'); -%>
+
+<table class="table mt-3">
+    <thead>
+      <tr>
+        <th scope="col">No</th>
+        <th scope="col">Cashier</th>
+        <th scope="col">Category</th>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Pevita Pearce</td>
+        <td>Drink</td>
+        <td>Latte</td>
+        <td>10000</td>
+        <td>
+            <a href="" class="badge badge-success mr-2" data-toggle="modal" data-target="#editModal1">edit</a>
+            <a href="" class="badge badge-danger mr-2" onClick="alert('Data Dihapus')">delete</a>        
+        </td>
+    </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Raisa Andriana</td>
+        <td>Food</td>
+        <td>Cake</td>
+        <td>20000</td>
+        <td>
+            <a href="" class="badge badge-success mr-2 " data-toggle="modal" data-target="#editModal2">edit</a>
+            <a href="" class="badge badge-danger mr-2" onClick="alert('Data Dihapus')"">delete</a>        
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Hasbi Musaddad</td>
+        <td>Food</td>
+        <td>Sego Pecel</td>
+        <td>45000</td>
+        <td>
+            <a href="" class="badge badge-success mr-2" data-toggle="modal" data-target="#editModal3">edit</a>
+            <a href="" class="badge badge-danger mr-2" onClick="alert('Data Dihapus')">delete</a>        
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+<!-- Modal -->
+<div class="modal fade" id="editModal1" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Save</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="card">
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="cashier">Cashier</label>
+                            <select class="form-control" id="cashier" name="cashier">
+                              <option>Cashier 1</option>
+                              <option>Cashier 2</option>
+                              <option>Cashier 3</option>
+                              <option>Cashier 4</option>
+                              <option>Cashier 5</option>
+                            </select>
+                          </div>
+                        <div class="form-group">
+                            <label for="category">Category</label>
+                            <select class="form-control" id="category" name="category">
+                              <option>Cashier 1</option>
+                              <option>Cashier 2</option>
+                              <option>Cashier 3</option>
+                              <option>Cashier 4</option>
+                              <option>Cashier 5</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" name="name">
+                          </div>
+                          <div class="form-group">
+                            <label for="price">Price</label>
+                            <input type="number" class="form-control" id="price" name="price">
+                          </div>
+                        
+                    <button type="submit" class="btn btn-warning text-white">edit</button>
+                  </form>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade" id="editModal2" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Edit</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="card">
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="cashier">Cashier</label>
+                            <select class="form-control" id="cashier" name="cashier">
+                              <option>Cashier 1</option>
+                              <option>Cashier 2</option>
+                              <option>Cashier 3</option>
+                              <option>Cashier 4</option>
+                              <option>Cashier 5</option>
+                            </select>
+                          </div>
+                        <div class="form-group">
+                            <label for="category">Category</label>
+                            <select class="form-control" id="category" name="category">
+                              <option>Cashier 1</option>
+                              <option>Cashier 2</option>
+                              <option>Cashier 3</option>
+                              <option>Cashier 4</option>
+                              <option>Cashier 5</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" name="name">
+                          </div>
+                          <div class="form-group">
+                            <label for="price">Price</label>
+                            <input type="number" class="form-control" id="price" name="price">
+                          </div>
+                        
+                    <button type="submit" class="btn btn-warning text-white">save</button>
+                  </form>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade" id="editModal3" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Edit</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="card">
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="cashier">Cashier</label>
+                            <select class="form-control" id="cashier" name="cashier">
+                              <option>Cashier 1</option>
+                              <option>Cashier 2</option>
+                              <option>Cashier 3</option>
+                              <option>Cashier 4</option>
+                              <option>Cashier 5</option>
+                            </select>
+                          </div>
+                        <div class="form-group">
+                            <label for="category">Category</label>
+                            <select class="form-control" id="category" name="category">
+                              <option>Cashier 1</option>
+                              <option>Cashier 2</option>
+                              <option>Cashier 3</option>
+                              <option>Cashier 4</option>
+                              <option>Cashier 5</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" name="name">
+                          </div>
+                          <div class="form-group">
+                            <label for="price">Price</label>
+                            <input type="number" class="form-control" id="price" name="price">
+                          </div>
+                        
+                    <button type="submit" class="btn btn-warning text-white">save</button>
+                  </form>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+<%- include('template/footer'); -%>

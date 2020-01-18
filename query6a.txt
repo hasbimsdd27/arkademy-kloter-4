@@ -1,0 +1,1 @@
+select product.id, cashier.name, T.Category, T.name, T.price from (select product.id_cashier as cashier, product.name, category.name as category, product.price from product right join category on product.id_category = category.id) AS T inner join cashier on T.cashier = cashier.id order by cashier.id;
