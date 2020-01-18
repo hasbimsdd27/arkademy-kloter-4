@@ -1,7 +1,14 @@
 # arkademy-kloter-4
 
 ### Untuk nomor 1-5 dibuat dengan javascript sehingga untuk menjalankannya cukup ketikkan `node nomorsoal.js`
-
+#### jawaban nomor 1 fungsi json
+      *JSON sebagai format untuk bertukar data client dan server atau antar aplikasi. Contoh: RESTful API;
+      *JSON sebagai tempat menyimpan data, contoh: Database Mongodb;
+      *JSON digunakan untuk menyimpan konfigurasi project, contoh: file composer.json pada project PHP dan package.json pada Nodejs;
+      *JSON digunakan untuk menyimpan konfigurasi dan penyimpanan data pada Hugo;
+      *JSON digunakan untuk menyimpan konfigurasi project pada Nodejs;
+      *JSON digunakan untuk menyimpan data menifest;
+  _sumber : petanikode.com_
 ## Soal nomor 6a
 Soal nomor 6a berikut adalah langkah langkah pembuatannya
 database bisa di import dari file sql
